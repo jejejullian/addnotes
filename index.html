@@ -24,7 +24,6 @@
             flex-direction: column;
         }
 
-        .wrapper {}
 
         .box {
             width: 10rem;
@@ -191,12 +190,13 @@
         }
 
         .wrapper {
-            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .box {
-            width: 20%;
-            height: 10vh;
+            width: 100%;
             font-size: 12px;
         }
 
@@ -228,25 +228,21 @@
             width: 100%;
         }
         .notes {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 20px;
+            display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-           
-
         }
 
         .note-item {
-            width: 100%;
-            padding: 10px;
+            width: 110%;
+            height: 28vh;
+            padding: 12px;
             box-sizing: border-box;
             word-break: break-word;
-            display: flex;
-            flex-direction: column;
             justify-content: space-between;
             position: relative;
-            right: 20px;
+            right: 11px;
         }
 
         .note-item .note-info {
