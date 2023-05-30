@@ -21,6 +21,7 @@
 
         .container {
             width: 100%;
+            display: flex;
             flex-direction: column;
         }
 
@@ -105,7 +106,6 @@
         .btnsubmit button {
             border: none;
             background-color: #F9FBE7;
-            color: black;
             font-size: 16px;
             width: 24%;
             padding: 10px;
@@ -123,13 +123,18 @@
 
         /* Bagian notes setelah ditambahkan */
         .notes {
+            position: relative;
             display: grid;
             grid-template-columns: auto auto auto;
             flex-direction: row;
-            justify-content: flex-start;
+            justify-content: left;
+            text-align: left;
         }
 
+
         .note-item {
+            position: relative;
+            right: 40px;
             width: 10rem;
             padding-right: 50px;
             padding-left: 50px;
@@ -137,8 +142,7 @@
             padding-bottom: 50px;
             background-color: #ECCDB4;
             cursor: pointer;
-            border-radius: 8px;
-            margin-bottom: 10px;
+            margin-bottom: 18px;
             margin-right: 20px;
             display: flex;
             flex-direction: column;
@@ -289,7 +293,6 @@
             <p>Add New Notes</p>
         </div>
     </div>
-    <h2>NOTES</h2>
     <ul id="notes-list" class="notes"></ul>
     <div class="overlay" id="overlay">
         <div class="popup">
